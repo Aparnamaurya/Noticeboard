@@ -1,15 +1,10 @@
 pragma solidity ^0.4.0;
+// smart contract to add multiple authors by the admin, who can add news article
 
-    // smart contract to add multiple authors by the admin, who can add news article
-    
 contract NoticeContract {
-
-    // publicee variable notice which can only be amended by the admin
-    
+// public variable notice which can only be amended by the admin
     string notice = "Hello World";
-   
-   // address of the admin: initialise once in constructor
-    
+// address of the admin: initialise once in constructor
     address issuer;
     // structure to store the information about the news article and its author
     struct news{
